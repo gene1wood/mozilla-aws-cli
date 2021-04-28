@@ -12,7 +12,7 @@ with open("README.md") as readme_file:
 # https://github.com/sybrenstuvel/python-rsa/blob/main/CHANGELOG.md#version-43--45---released-2020-06-12
 rsa_version = "<=4.5" if sys.version_info[0] == 2 else ""
 # https://github.com/pytest-dev/pytest-runner/blob/main/CHANGES.rst#v530
-pytest_runner_version = "<=5.3" if sys.version_info[0] == 2 else ""
+pytest_runner_version = "<5.3" if sys.version_info[0] == 2 else ""
 
 requirements = [
     "appdirs",
